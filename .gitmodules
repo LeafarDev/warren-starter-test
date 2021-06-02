@@ -1,0 +1,6 @@
+[submodule "applications/warren-client-test"]
+	path = applications/warren-client-test
+	url = https://github.com/LeafarDev/warren-client-test.git
+[submodule "applications/warren-api-test"]
+	path = applications/warren-api-test
+	url = https://github.com/LeafarDev/warren-api-test
