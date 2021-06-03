@@ -22,9 +22,9 @@
 #### Dentro da pasta do repositório utilize os comando abaixo para criar os arquivos .env
 
 * Back-end:
-  ``` cp applications/warren-api-test/.env.example .env ```
+  ``` cp applications/warren-api-test/.env.example applications/warren-api-test/.env ```
 * Front-end:
-  ``` cp applications/warren-client-test/.env.example .env ```
+  ``` cp applications/warren-client-test/.env.example applications/warren-client-test/.env```
 
 #### Execute o docker-compose:
 
