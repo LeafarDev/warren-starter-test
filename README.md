@@ -5,7 +5,9 @@
 #### Tenha instalado o [Git](https://git-scm.com/downloads), [Docker](https://docs.docker.com/engine/install/) e o [Docker Compose](https://docs.docker.com/compose/install/) na sua máquina
 
 #
-###  Repositórios:
+
+### Repositórios:
+
 #### O detalhamento de cada projeto estão disponiveis em seus READMEs:
 
 * [Readme do Front-end](https://github.com/LeafarDev/warren-client-test/blob/main/README.md)
@@ -22,7 +24,8 @@
 #### Dentro da pasta do repositório utilize os comando abaixo para criar os arquivos .env
 
 * Back-end:
-  ``` cp applications/warren-api-test/.env.example applications/warren-api-test/.env ```
+    * Produção:``` cp applications/warren-api-test/.env.example applications/warren-api-test/.env ```
+    * Teste:``` cp applications/warren-api-test/.env.test.example applications/warren-api-test/.env.test ```
 * Front-end:
   ``` cp applications/warren-client-test/.env.example applications/warren-client-test/.env```
 
@@ -44,8 +47,14 @@
 * Deposito: Permite a inserção de dinheiro na conta do usuário logado
 * Saque: Permite a retirada de dinheiro da conta do usuário logado
 * Pagamento: Permite que uma conta pague uma quantia desejada para outras contas
-* Rendimento Diário: Todo dia o sistema executa uma rotina que gera um rendimento de acordo com o balanço
-  de cada conta
+* Rendimento Diário: Todo dia o sistema executa uma rotina que gera um rendimento de acordo com o balanço de cada conta
+
+#
+
+### Executando os testes:
+
+* Back-end: ```docker-compose run warren-bank-api npm run test```
+* Front-end ```docker-compose up warren-client-test```
 
 #
 
