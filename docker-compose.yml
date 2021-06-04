@@ -7,7 +7,7 @@ services:
     ports:
       - "5433:5432"
     env_file:
-      - ./config/postgres/databse.env
+      - ./config/postgres/database.env
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 15s
