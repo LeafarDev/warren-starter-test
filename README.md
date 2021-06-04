@@ -30,6 +30,7 @@
     * [Node-cron](https://github.com/kelektiv/node-cron)
     * [TypeDi](https://github.com/typestack/typedi)
     * [Jest](https://jestjs.io/)
+    * [Routing-controllers](https://github.com/typestack/routing-controllers)
 #
 ### Instalação:
 
