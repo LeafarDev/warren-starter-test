@@ -85,12 +85,6 @@
       ```
 
       ```
-        Login: dumingaz.silva@gmail.com
-        Senha: 12345678
-        Conta: 65932871
-      ```
-
-      ```
         Login: charles.marciano45@gmail.com
         Senha: 12345678
         Conta: 12345678
