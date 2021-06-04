@@ -1,6 +1,6 @@
 # warren-starter-test
 
-### Dependencias:
+### Dependências:
 
 #### Tenha instalado o [Git](https://git-scm.com/downloads), [Docker](https://docs.docker.com/engine/install/) e o [Docker Compose](https://docs.docker.com/compose/install/) na sua máquina
 
@@ -8,20 +8,36 @@
 
 ### Repositórios:
 
-#### O detalhamento de cada projeto estão disponiveis em seus READMEs:
-
-* [Readme do Front-end](https://github.com/LeafarDev/warren-client-test/blob/main/README.md)
-* [Readme do Back-end](https://github.com/LeafarDev/warren-api-test/blob/main/README.md)
+* [Front-end](https://github.com/LeafarDev/warren-client-test/blob/main/README.md)
+* [Back-end](https://github.com/LeafarDev/warren-api-test/blob/main/README.md)
 
 #
+### Principais tecnologias utilizadas:
 
+* Front-end:
+    * [React.js](https://reactjs.org/)
+    * [TypeScript](https://www.typescriptlang.org/)
+    * [Yup](https://github.com/jquense/yup)
+    * [Formik](https://formik.org/)
+    * [Axios](https://github.com/axios/axios)
+    * [Jest](https://jestjs.io/)
+    
+* Back-end:
+    * [Node.js](https://nodejs.org/en/)
+    * [Express.js](https://expressjs.com/)
+    * [TypeOrm](https://typeorm.io/#/)
+    * [TypeScript](https://www.typescriptlang.org/)
+    * [Node-cron](https://github.com/kelektiv/node-cron)
+    * [TypeDi](https://github.com/typestack/typedi)
+    * [Jest](https://jestjs.io/)
+#
 ### Instalação:
 
-#### Clone esse projeto junto com seus modulos utilizando o comando abaixo:
+#### Clone esse projeto junto com seus módulos utilizando o comando abaixo:
 
 ```git clone --recurse-submodules -j8 https://github.com/LeafarDev/warren-starter-test```
 
-#### Dentro da pasta do repositório utilize os comando abaixo para criar os arquivos .env
+#### Dentro da pasta do repositório utilize os comandos abaixo para criar os arquivos .env
 
 * Back-end:
     * Produção:``` cp applications/warren-api-test/.env.example applications/warren-api-test/.env ```
@@ -42,19 +58,19 @@
 
 #
 
+### Executando os testes:
+
+* Back-end: ```docker-compose run warren-bank-api npm run test```
+* Front-end ```docker-compose up warren-client-test```
+
+#
+
 ### Funcionalidades:
 
 * Deposito: Permite a inserção de dinheiro na conta do usuário logado
 * Saque: Permite a retirada de dinheiro da conta do usuário logado
 * Pagamento: Permite que uma conta pague uma quantia desejada para outras contas
 * Rendimento Diário: Todo dia o sistema executa uma rotina que gera um rendimento de acordo com o balanço de cada conta
-
-#
-
-### Executando os testes:
-
-* Back-end: ```docker-compose run warren-bank-api npm run test```
-* Front-end ```docker-compose up warren-client-test```
 
 #
 
