@@ -67,7 +67,7 @@
 
 ### Funcionalidades:
 
-* Deposito: Permite a inserção de dinheiro na conta do usuário logado
+* Depósito: Permite a inserção de dinheiro na conta do usuário logado
 * Saque: Permite a retirada de dinheiro da conta do usuário logado
 * Pagamento: Permite que uma conta pague uma quantia desejada para outras contas
 * Rendimento Diário: Todo dia o sistema executa uma rotina que gera um rendimento de acordo com o balanço de cada conta
