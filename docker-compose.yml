@@ -33,22 +33,28 @@ services:
   warren-bank-api:
     container_name: warren-bank-api
     build: ./applications/warren-api-test
+    command: sh -c "npm i && npm run dev"
     volumes:
-      - ./applications/warren-api-test:/app
+      - ./applications/warren-api-test:/usr/src/app
     ports:
       - 3333:3333
     depends_on:
       warren-db:
         condition: service_healthy
+    environment:
+      - NODE_ENV=development
   warren-client:
     stdin_open: true
     container_name: warren-client
     build: ./applications/warren-client-test
+    command: sh -c "npm i && npm run start"
     ports:
-      - "3380:80"
+      - "3380:3000"
     volumes:
-      - "./applications/warren-client-test:/app"
-      - ./config/client/nginx.conf:/etc/nginx/nginx.conf
+      - ./applications/warren-client-test:/usr/src/app
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
   warren-client-test:
     profiles: ["cli-only"]
     container_name: warren-client-test
